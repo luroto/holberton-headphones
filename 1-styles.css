@@ -95,10 +95,25 @@
     --button-color: var(--color-white);
     --button-text-transform: uppercase;
     --button-font-family: var(--font-family-bold);
+    
     /*Containers*/
     --container-padding: 1.5rem 0;
     --header-container-padding: 1.5rem;
     --section-hero-container-padding: 1.5rem;
+    --desktop-container-flex-direction: row;
+    --tablet-container-flex-direction: row;
+    --mobile-container-flex-direction: column;
+    --tablet-container-element-max-width: 70%;
+    --desktop-container-element-max-width: 80%;
+    --mobile-container-element-max-width: 50%;
+    --desktop-container-wrap: nowrap;
+    --tablet-container-wrap: wrap;
+    --mobile-container-wrap:wrap;
+    --desktop-container-justify-content: space-around;
+    --tablet-container-justify-content: space-around;
+    --mobile-container-justify-content: space-around;
+
+
   }
     
     /* Base */
@@ -258,7 +273,7 @@
       width: 100%;
       padding: var(--header-container-padding);
       display: flex;
-      justify-content:space-around;
+      justify-content:var(--desktop-container-justify-content);
       align-items: center;
     }
     .what-we-do-container {
@@ -319,7 +334,7 @@
       display:flex;
       flex: 1 0 100%;
       flex-direction: row;
-      justify-content: space-around;
+      justify-content: var(--desktop-container-justify-content);
     }
 
     .what-we-do-element {
@@ -357,11 +372,11 @@
         padding: 2rem;
       }
       .what-we-do-elements {
-        flex-wrap: wrap;
-        justify-content: space-around;
+        flex-wrap: var(--tablet-container-wrap);
+        justify-content: var(--tablet-container-justify-content);
       }
-      .what-we-do-element p {
-        max-width: 80%;
+      .what-we-do-element > *:not(.icon) {
+        max-width: var(--tablet-container-element-max-width);
       }
     }
    @media all and (max-width: 480px){
@@ -403,10 +418,10 @@
       padding: var(--section-hero-container-padding);
     }
     .what-we-do-elements {
-      flex-direction: column;
+      flex-direction: var(--mobile-container-flex-direction);
     }
     .what-we-do-element > *:not(.icon) {
-      max-width: 50%;
+      max-width: var(--mobile-container-element-max-width);
     }
    }
 
