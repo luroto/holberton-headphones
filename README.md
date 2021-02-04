@@ -20,13 +20,13 @@ This project is intended to build a webpage based on Figma designs, using just H
 - A text editor (preferred VS Code)
 
 ### Detailed content 
-[0-index.html](./0-index.html) : Building header and responsive menu
-[1-index.html](./1.index.html): Building the We are section, handled with flex boxes 
-[2-index.html] (./2-index.html): Building the Our results section, handled again with flex-box mostly
-[3-index.html](./3-index.html): Building the form section
-[4-index.html](./4-index.html): Building the footer section
-[icon-font-style](./icon-font-style.css): Handles the custom icon fonts
-[100-index.html](./100-index.html): Building pentagons using just CSS 
+- [0-index.html](./0-index.html) : Building header and responsive menu
+- [1-index.html](./1-index.html): Building the We are section, handled with flex boxes 
+- [2-index.html](./2-index.html): Building the Our results section, handled again with flex-box mostly
+- [3-index.html](./3-index.html): Building the form section
+- [4-index.html](./4-index.html): Building the footer section
+- [icon-font-style](./icon-font-style.css): Handles the custom icon fonts
+- [100-index.html](./100-index.html): Building pentagons using just CSS 
 
 ### Author
 
